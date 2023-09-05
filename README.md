@@ -1,5 +1,6 @@
-# ISN2022_InfTransmission
+## Université de Lorraine - ISN ENSEM
+# Transmisstion de L'information
 
-Matériel du cours de Transmisstion de L'information de l'ENSEM - Université de Lorraine.
+Matériel du cours du S7 - 2èmme année 2022/2. Professeures : Valérie Louis-Dorr et Maya Kallas (TPs).
 
-S7 - 2èmme année 2022/2. Professeures : Valérie Louis-Dorr et Maya Kallas (TPs).
+

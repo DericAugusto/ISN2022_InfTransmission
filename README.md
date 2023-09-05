@@ -1,2 +1,2 @@
 # ISN2022_InfTransmission
-Material from the course of Information Transmission from ENSEM - Université de Lorraine.
+Material from the course of Information Transmission at ENSEM - Université de Lorraine.

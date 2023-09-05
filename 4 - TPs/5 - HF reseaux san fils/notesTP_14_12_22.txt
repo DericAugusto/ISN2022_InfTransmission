@@ -1,0 +1,20 @@
+Express -> Entrée -> Drivers instruments -> NI USRP -> Exemples -> Modulation ToolkitExamples -> ni USRP Ex FM Demo Sound Card (Queue)
+Programmation -> Structures - Boucle while
+
+IQ Sampling Rate 
+
+carrier frequency = frequence de la porteuse - frequência portadora
+
+
+variáveis :
+
+total bits = número de bits que estão sendo enviados
+symbol = ponto de marcação na constelação 
+bit/symbol = numero de bits da string de dados que estarão sendo representados em cada símbolo. Se temos que é 2, isso significa que de 2 em 2 bits, eles serão designados aos pontos da constalação.
+samples/symbol => cada simbolo rebeberá a quantidade (bit/symbol) de bits. A quantidade de vezes que isso é enviado é justamente o samples/symbol. por exemplo, se temos 01000111 na informação e bit/symbol = 4, teremos 0100 no primeiro símbolo e 0111 em um segundo símbolo. Se bit/symbol = 8, enviaremos cada bloquinho de 4 bits duas vezes, já que o sample apresenta 8 bits.
+
+bit/symbol = n 
+2^n -> Quadratic Amplitude Modulation
+
+2^4 = 16
+16 simbolos, cada símbolo usa 4 bits, para que cada símbolo represente um número de 16

@@ -1,0 +1,40 @@
+===============================
+arbre :  V 
+
+recebe como entrada as probabilidades de cada caractere e devolve uma matriz Ma, que representa a árvore gerada e noms, que representa o seguinte -> quando se decide em ligar B e C por exemplo, para gerar o nó BC, dita-se um número binário para explicar que quele nó é um BC, então da-se um número binário para B e um oposto para C. Então nesse caso, podemos por exemplo dar o número 1 para B e 0 para 0. Ao ligar BC com R, podemos dar o número 1 para BC e 0 para R. Assim, ao final teremos a coluna (A B C R BC BCR BCRA) e seu noms representará o número relativo a cada um desses valores, na ordem que os valores aparecem no vetor,
+
+então se A = 1, B = 0, C =1, R = 1,... teremos noms = [1 0 1 1 ...]
+
+===============================
+dictionaire :
+
+recebe Ma, noms e S (sendo S o vetor com os valores de M uma só vez na ordem).
+cria o dicionário dico onde os valores de S são as chaves e seu valor é um vetor com a ordem dos números de noms no caractere de s analisado.
+Então no exemplo dado pelo professor da foto, temos que B = 1, BC = 1 e BCR = 0, então dico(B) = [0,1,1].
+Como C = 0, BC = 1 e BCR = 0, teremos dico(C) = [010]
+Como R = 0, BCR = 0 => dico(R) = [0 0]
+A = 1 => dico(A) = [1]
+
+===============================
+encodage :
+
+vai receber  a string de valores M = 'ABRACARABA' por exemplo e o dicionário dico. 
+Vai colocar em ordem, concatenando os valores de cada caractere de M.
+Então o valor de A + o valor de B + valor de R + valor de A + valor de C + ...
+e vai devlver a lista Mcad
+
+===============================
+codage :
+
+recebe Mcad gerada pela função encodage e dico. Ele vai receber como entrada uma lista de zeros e uns e tem que buscar no dicionário ...
+vai ler por exemplo 1 e pesquisar se isso é um valor do dicionário, se não, vai ler o próximo, se for 0, vai pesquisar se 10 é um valor do dicionário. Se não, vai ler o próximo e se for 0, vai pesquisar se 100 é um valor do dicionário
+se sim, vai tirar qual é a chave desse valor, e se for por exemplo B, vai salvá-la em Mdecod. 
+
+No final Mdecod deve ser igual à M antes de ser passada na função encodage
+===============================
+
+
+
+
+
+
